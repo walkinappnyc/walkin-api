@@ -4,10 +4,10 @@
     "connector": "memory"
   },
   "testwalk": {
-    "host": "localhost",
+    "host": "",
     "port": 5432,
-    "url": "",
-    "database": "testwalk",
+    "url": "postgres://bjhwlvtbprmgrf:f0a66cff38c33486d5b3d344d6b5598e00ae0284e31a84a6070969f6605d056a@ec2-54-243-147-162.compute-1.amazonaws.com:5432/d2u7nndbi1v8e3",
+    "database": "",
     "password": "",
     "name": "testwalk",
     "user": "",
@@ -20,16 +20,6 @@
     "database": "",
     "password": "",
     "name": "staging",
-    "user": "",
-    "connector": "postgresql"
-  },
-  "prod": {
-    "host": "",
-    "port": 0,
-    "url": "postgres://bjhwlvtbprmgrf:f0a66cff38c33486d5b3d344d6b5598e00ae0284e31a84a6070969f6605d056a@ec2-54-243-147-162.compute-1.amazonaws.com:5432/d2u7nndbi1v8e3",
-    "database": "",
-    "password": "",
-    "name": "prod",
     "user": "",
     "connector": "postgresql"
   }
