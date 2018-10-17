@@ -34,6 +34,7 @@ module.exports = function migrateAccountModels (app, next) {
     })
   } else if (process.env.NODE_ENV = 'prod') {
     console.log('prod')
+    const psql = app.dataSources.prod
       psql.isActual(models, (err, actual) => {
         if (err) {
           throw err
@@ -60,6 +61,7 @@ module.exports = function migrateAccountModels (app, next) {
     })
   } else {
     console.log('dev')
+    const psql = app.dataSources.testwalk
     psql.isActual(models, (err, actual) => {
       if (err) {
         throw err
