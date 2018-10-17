@@ -43,5 +43,41 @@
   "Client": {
     "dataSource": "testwalk",
     "public": true
+  },
+  "Job": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "SiteVar": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "FrequentlyAskedQuestion": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "FailedJob": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "Building": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "OpenHouse": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "Feature": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "Unit": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "FeatureUnit": {
+    "dataSource": "testwalk",
+    "public": true
   }
 }

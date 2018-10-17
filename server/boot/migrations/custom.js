@@ -1,7 +1,15 @@
 'use strict'
 
 const models = [
-  'Client'
+  'Client',
+  'Incentive',
+  'Job',
+  'SiteVar',
+  'FrequentlyAskedQuestion',
+  'Building',
+  'OpenHouse',
+  'Feature',
+  'Unit'
 ]
 
 module.exports = function migrateAccountModels (app, next) {

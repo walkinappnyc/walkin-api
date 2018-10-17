@@ -1,0 +1,118 @@
+{
+  "name": "Unit",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "yardi_code": {
+      "type": "string"
+    },
+    "type": {
+      "type": "any",
+      "required": true
+    },
+    "number": {
+      "type": "string",
+      "required": true
+    },
+    "feed_number_override": {
+      "type": "string"
+    },
+    "show_number": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "slug": {
+      "type": "string",
+      "required": true
+    },
+    "floor": {
+      "type": "string",
+      "required": true
+    },
+    "square_footage": {
+      "type": "number",
+      "required": true
+    },
+    "rooms": {
+      "type": "any",
+      "required": true
+    },
+    "bedrooms": {
+      "type": "number",
+      "required": true
+    },
+    "bathrooms": {
+      "type": "any",
+      "required": true
+    },
+    "price": {
+      "type": "any",
+      "required": true
+    },
+    "lease_term": {
+      "type": "number",
+      "required": true
+    },
+    "concession_months": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "concession_language": {
+      "type": "string",
+      "required": true
+    },
+    "concession_expiration": {
+      "type": "string",
+      "required": true
+    },
+    "disable_openhouse": {
+      "type": "string",
+      "default": "no"
+    },
+    "active_streeteasy": {
+      "type": "string",
+      "default": "no"
+    },
+    "body": {
+      "type": "any",
+      "required": true
+    },
+    "status": {
+      "type": "any",
+      "required": true
+    },
+    "featured": {
+      "type": "boolean",
+      "required": true
+    },
+    "version": {
+      "type": "any",
+      "required": true
+    },
+    "apply_link": {
+      "type": "string"
+    },
+    "virtual_tour_id": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "features": {
+      "type": "hasMany",
+      "model": "Feature",
+      "foreignKey": "",
+      "through": "FeatureUnit"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

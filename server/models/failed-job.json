@@ -1,0 +1,30 @@
+{
+  "name": "FailedJob",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "connection": {
+      "type": "any",
+      "required": true
+    },
+    "queue": {
+      "type": "any",
+      "required": true
+    },
+    "payload": {
+      "type": "any",
+      "required": true
+    },
+    "failed_at": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
