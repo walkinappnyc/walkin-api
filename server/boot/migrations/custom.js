@@ -5,7 +5,7 @@ const models = [
 ]
 
 module.exports = function migrateAccountModels (app, next) {
-  const psql = app.dataSources.staging
+  const psql = app.dataSources.testwalk
   psql.isActual(models, (err, actual) => {
     if (err) {
       throw err
