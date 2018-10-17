@@ -14,25 +14,34 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "testwalk",
+    "public": true
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "testwalk",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "testwalk",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "testwalk",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "testwalk",
     "public": false
+  },
+  "Incentive": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "Client": {
+    "dataSource": "testwalk",
+    "public": true
   }
 }

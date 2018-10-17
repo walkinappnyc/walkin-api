@@ -2,5 +2,15 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "testwalk": {
+    "host": "localhost",
+    "port": 5432,
+    "url": "",
+    "database": "testwalk",
+    "password": "",
+    "name": "testwalk",
+    "user": "",
+    "connector": "postgresql"
   }
 }
