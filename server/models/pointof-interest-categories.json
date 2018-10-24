@@ -1,5 +1,5 @@
 {
-  "name": "Feature",
+  "name": "PointofInterestCategories",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -10,10 +10,6 @@
       "type": "string",
       "required": true
     },
-    "feed_meta": {
-      "type": "any",
-      "required": true
-    },
     "created_at": {
       "type": "date"
     },
@@ -22,7 +18,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "pointsofInterests": {
+      "type": "hasMany",
+      "model": "PointsofInterest",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

@@ -1,21 +1,24 @@
 {
-  "name": "FrequentlyAskedQuestion",
+  "name": "Transportation",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "question": {
+    "building_id": {
+      "type": "number"
+    },
+    "station_name": {
       "type": "string",
       "required": true
     },
-    "answer": {
-      "type": "any",
+    "station_service": {
+      "type": "string",
       "required": true
     },
-    "weight": {
-      "type": "any",
+    "distance_to_station": {
+      "type": "string",
       "required": true
     },
     "created_at": {
@@ -26,7 +29,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "building": {
+      "type": "belongsTo",
+      "model": "Building",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

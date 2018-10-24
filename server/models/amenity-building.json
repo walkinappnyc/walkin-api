@@ -1,24 +1,18 @@
 {
-  "name": "Feature",
+  "name": "AmenityBuilding",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "name": {
-      "type": "string",
+    "amenity_id": {
+      "type": "number",
       "required": true
     },
-    "feed_meta": {
-      "type": "any",
+    "building_id": {
+      "type": "number",
       "required": true
-    },
-    "created_at": {
-      "type": "date"
-    },
-    "updated_at": {
-      "type": "date"
     }
   },
   "validations": [],

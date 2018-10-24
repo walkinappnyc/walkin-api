@@ -1,17 +1,26 @@
 {
-  "name": "Feature",
+  "name": "MetaData",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "name": {
-      "type": "string",
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "keywords": {
+      "type": "string"
+    },
+    "metadatable_id": {
+      "type": "number",
       "required": true
     },
-    "feed_meta": {
-      "type": "any",
+    "metadatable_type": {
+      "type": "string",
       "required": true
     },
     "created_at": {

@@ -9,7 +9,7 @@
     "url": "postgres://whekkbisazauci:d9e96aa0e9197bc932543a42f4a60c6cfb6724fbbaaba4d1f3e2d85889aded15@ec2-54-243-147-162.compute-1.amazonaws.com:5432/dc7cri5kpjl8kn",
     "database": "",
     "password": "",
-    "name": "",
+    "name": "testwalk",
     "user": "",
     "connector": "postgresql"
   }

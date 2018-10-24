@@ -1,5 +1,5 @@
 {
-  "name": "Feature",
+  "name": "Amenity",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {

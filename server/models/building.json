@@ -55,6 +55,12 @@
       "type": "hasMany",
       "model": "OpenHouse",
       "foreignKey": ""
+    },
+    "amenities": {
+      "type": "hasMany",
+      "model": "Amenity",
+      "foreignKey": "",
+      "through": "AmenityBuilding"
     }
   },
   "acls": [],

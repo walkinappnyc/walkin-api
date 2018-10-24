@@ -1,5 +1,5 @@
 {
-  "name": "Feature",
+  "name": "PointsofInterest",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -10,19 +10,22 @@
       "type": "string",
       "required": true
     },
-    "feed_meta": {
-      "type": "any",
+    "point_of_interest_category_id": {
+      "type": "number",
       "required": true
     },
     "created_at": {
       "type": "date"
-    },
-    "updated_at": {
-      "type": "date"
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "neighborhood": {
+      "type": "belongsTo",
+      "model": "Neighborhood",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

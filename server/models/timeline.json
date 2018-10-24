@@ -1,16 +1,24 @@
 {
-  "name": "Feature",
+  "name": "Timeline",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "name": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "feed_meta": {
+    "body": {
+      "type": "string",
+      "required": true
+    },
+    "image_id": {
+      "type": "number",
+      "required": true
+    },
+    "year": {
       "type": "any",
       "required": true
     },
@@ -22,7 +30,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "image": {
+      "type": "belongsTo",
+      "model": "Image",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

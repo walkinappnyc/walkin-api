@@ -1,5 +1,5 @@
 {
-  "name": "Feature",
+  "name": "Attraction",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -10,8 +10,12 @@
       "type": "string",
       "required": true
     },
-    "feed_meta": {
-      "type": "any",
+    "body": {
+      "type": "string",
+      "required": true
+    },
+    "image_id": {
+      "type": "number",
       "required": true
     },
     "created_at": {

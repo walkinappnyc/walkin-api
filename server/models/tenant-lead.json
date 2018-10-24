@@ -1,0 +1,76 @@
+{
+  "name": "TenantLead",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "first_name": {
+      "type": "string",
+      "required": true
+    },
+    "last_name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string"
+    },
+    "questions": {
+      "type": "string"
+    },
+    "region_id": {
+      "type": "number",
+      "required": true
+    },
+    "building_id": {
+      "type": "number"
+    },
+    "status": {
+      "type": "any",
+      "required": true
+    },
+    "user_id": {
+      "type": "number"
+    },
+    "unit_id": {
+      "type": "number"
+    },
+    "created_at": {
+      "type": "date"
+    },
+    "updated_at": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "building": {
+      "type": "belongsTo",
+      "model": "Building",
+      "foreignKey": ""
+    },
+    "unit": {
+      "type": "belongsTo",
+      "model": "Unit",
+      "foreignKey": ""
+    },
+    "n": {
+      "type": "belongsTo",
+      "model": "Region",
+      "foreignKey": ""
+    },
+    "client": {
+      "type": "belongsTo",
+      "model": "Client",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -111,6 +111,12 @@
       "model": "Feature",
       "foreignKey": "",
       "through": "FeatureUnit"
+    },
+    "incentives": {
+      "type": "hasMany",
+      "model": "Incentive",
+      "foreignKey": "",
+      "through": "IncentiveUnit"
     }
   },
   "acls": [],

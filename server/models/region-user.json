@@ -1,17 +1,17 @@
 {
-  "name": "Feature",
+  "name": "RegionUser",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "name": {
-      "type": "string",
+    "region_id": {
+      "type": "number",
       "required": true
     },
-    "feed_meta": {
-      "type": "any",
+    "user_id": {
+      "type": "number",
       "required": true
     },
     "created_at": {

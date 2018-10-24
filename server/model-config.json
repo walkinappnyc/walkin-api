@@ -40,10 +40,6 @@
     "dataSource": "testwalk",
     "public": true
   },
-  "Client": {
-    "dataSource": "testwalk",
-    "public": true
-  },
   "Job": {
     "dataSource": "testwalk",
     "public": true
@@ -77,6 +73,94 @@
     "public": true
   },
   "FeatureUnit": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "Client": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "IncentiveUnit": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "Region": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "RegionUser": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "BuildingUser": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "Neighborhood": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "Timeline": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "Image": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "TenantLead": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "Transportation": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "AttractionRegion": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "Attraction": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "Floorplan": {
+    "dataSource": "testwalk",
+    "public": false
+  },
+  "MetaData": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "Slideshow": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "NeighborhoodPointOfInterest": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "PointsofInterest": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "PointofInterestCategories": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "RegionWaitunit": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "Amenity": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "AmenityBuilding": {
+    "dataSource": "testwalk",
+    "public": true
+  },
+  "Address": {
     "dataSource": "testwalk",
     "public": true
   }

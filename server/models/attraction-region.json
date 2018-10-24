@@ -1,24 +1,18 @@
 {
-  "name": "Feature",
+  "name": "AttractionRegion",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "name": {
-      "type": "string",
+    "attraction_id": {
+      "type": "number",
       "required": true
     },
-    "feed_meta": {
-      "type": "any",
+    "region_id": {
+      "type": "number",
       "required": true
-    },
-    "created_at": {
-      "type": "date"
-    },
-    "updated_at": {
-      "type": "date"
     }
   },
   "validations": [],

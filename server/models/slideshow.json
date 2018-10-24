@@ -1,5 +1,5 @@
 {
-  "name": "Feature",
+  "name": "Slideshow",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -10,8 +10,12 @@
       "type": "string",
       "required": true
     },
-    "feed_meta": {
-      "type": "any",
+    "max_slides": {
+      "type": "number",
+      "required": true
+    },
+    "min_slides": {
+      "type": "number",
       "required": true
     },
     "created_at": {

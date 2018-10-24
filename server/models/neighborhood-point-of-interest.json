@@ -1,24 +1,18 @@
 {
-  "name": "Feature",
+  "name": "NeighborhoodPointOfInterest",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "name": {
-      "type": "string",
+    "neighborhood_id": {
+      "type": "number",
       "required": true
     },
-    "feed_meta": {
-      "type": "any",
+    "point_of_interest_id": {
+      "type": "number",
       "required": true
-    },
-    "created_at": {
-      "type": "date"
-    },
-    "updated_at": {
-      "type": "date"
     }
   },
   "validations": [],

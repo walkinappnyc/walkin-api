@@ -1,37 +1,33 @@
 {
-  "name": "Client",
-  "base": "User",
+  "name": "Neighborhood",
+  "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "first_name": {
+    "name": {
       "type": "string",
       "required": true
     },
-    "last_name": {
+    "slug": {
       "type": "string",
       "required": true
     },
-    "email": {
-      "type": "string",
+    "region_id": {
+      "type": "number",
       "required": true
     },
-    "phone": {
+    "body": {
       "type": "string"
     },
-    "role": {
-      "type": "any",
-      "required": true
+    "weight": {
+      "type": "number",
+      "required": true,
+      "default": 0
     },
-    "listing_notification": {
-      "type": "boolean",
-      "required": true
-    },
-    "password": {
-      "type": "string",
-      "required": true
+    "created_at": {
+      "type": "date"
     },
     "updated_at": {
       "type": "date"
@@ -39,11 +35,11 @@
   },
   "validations": [],
   "relations": {
-    "buildings": {
+    "pointsofInterests": {
       "type": "hasMany",
-      "model": "Building",
+      "model": "PointsofInterest",
       "foreignKey": "",
-      "through": "BuildingUser"
+      "through": "NeighborhoodPointOfInterest"
     }
   },
   "acls": [],

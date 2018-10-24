@@ -1,24 +1,22 @@
 {
-  "name": "Feature",
+  "name": "RegionWaitunit",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "name": {
-      "type": "string",
+    "region_id": {
+      "type": "number",
       "required": true
     },
-    "feed_meta": {
-      "type": "any",
+    "unit_id": {
+      "type": "number",
       "required": true
     },
-    "created_at": {
-      "type": "date"
-    },
-    "updated_at": {
-      "type": "date"
+    "unit_size": {
+      "type": "number",
+      "required": true
     }
   },
   "validations": [],

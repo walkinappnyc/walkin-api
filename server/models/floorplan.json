@@ -1,17 +1,25 @@
 {
-  "name": "Feature",
+  "name": "Floorplan",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "name": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "feed_meta": {
-      "type": "any",
+    "filename": {
+      "type": "string",
+      "required": true
+    },
+    "path": {
+      "type": "string",
+      "required": true
+    },
+    "building_id": {
+      "type": "number",
       "required": true
     },
     "created_at": {
@@ -22,7 +30,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "building": {
+      "type": "belongsTo",
+      "model": "Building",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
