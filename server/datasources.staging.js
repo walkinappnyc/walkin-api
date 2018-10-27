@@ -1,13 +1,10 @@
-{
-  "db": {
-    "name": "db",
-    "connector": "memory"
-  },
+'use strict'
+
+module.exports = {
   "testwalk": {
-    "host": "localhost",
+    "host": "",
     "port": 5432,
-    "url": "",
-    "database": "testwalk",
+    "url": process.env.DATABASE_URL
     "password": "",
     "name": "testwalk",
     "user": "",
