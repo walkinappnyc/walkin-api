@@ -1,7 +1,7 @@
 'use strict'
 
 module.exports = {
-  "testwalk": {
+  "mysql": {
     "host": "",
     "port": 5432,
     "url": process.env.DATABASE_URL,

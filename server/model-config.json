@@ -14,154 +14,154 @@
     ]
   },
   "User": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "AccessToken": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": false
   },
   "ACL": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": false
   },
   "Incentive": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "Job": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "SiteVar": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "FrequentlyAskedQuestion": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "FailedJob": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "Building": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "OpenHouse": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "Feature": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "Unit": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "FeatureUnit": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "Client": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "IncentiveUnit": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "Region": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "RegionUser": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "BuildingUser": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "Neighborhood": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "Timeline": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "Image": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "TenantLead": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "Transportation": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "AttractionRegion": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "Attraction": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "Floorplan": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": false
   },
   "MetaData": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "Slideshow": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "NeighborhoodPointOfInterest": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "PointsofInterest": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "PointofInterestCategories": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "RegionWaitunit": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "Amenity": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "AmenityBuilding": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   },
   "Address": {
-    "dataSource": "testwalk",
+    "dataSource": "mysql",
     "public": true
   }
 }

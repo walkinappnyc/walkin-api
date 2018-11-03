@@ -13,8 +13,8 @@ const models = [
 ]
 
 module.exports = function migrateAccountModels (app, next) {
-  const psql = app.dataSources.testwalk
-  psql.isActual(models, (err, actual) => {
+  const mysql = app.dataSources.mysql
+  mysql.isActual(models, (err, actual) => {
     if (err) {
       throw err
     }
@@ -29,7 +29,7 @@ module.exports = function migrateAccountModels (app, next) {
 
     console.log('Migrating Custom Models...')
 
-    psql.autoupdate(models, (err, result) => {
+    mysql.autoupdate(models, (err, result) => {
       if (err) throw err
 
       console.log('Custom models migration successful!')
