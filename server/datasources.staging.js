@@ -6,7 +6,7 @@ module.exports = {
     "port": 3306,
     "url": process.env.JAWSDB_URL,
     "password": "",
-    "name": "testwalk",
+    "name": "mysql",
     "user": "",
     "connector": "mysql"
   }
