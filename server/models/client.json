@@ -22,7 +22,7 @@
       "type": "string"
     },
     "role": {
-      "type": "any",
+      "type": "string",
       "required": true
     },
     "listing_notification": {
@@ -32,6 +32,9 @@
     "password": {
       "type": "string",
       "required": true
+    },
+    "created_at": {
+      "type": "date"
     },
     "updated_at": {
       "type": "date"
