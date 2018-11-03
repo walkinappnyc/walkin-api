@@ -3,7 +3,7 @@
 module.exports = {
   "testwalk": {
     "host": "",
-    "port": 5432,
+    "port": 3306,
     "url": process.env.JAWSDB_URL,
     "password": "",
     "name": "testwalk",
