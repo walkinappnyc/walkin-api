@@ -8,6 +8,6 @@ module.exports = {
     "password": "",
     "name": "testwalk",
     "user": "",
-    "connector": "postgresql"
+    "connector": "mysql"
   }
 }
