@@ -3,14 +3,13 @@
     "name": "db",
     "connector": "memory"
   },
-  "testwalk": {
+  "mysql": {
     "host": "localhost",
-    "port": 5432,
-    "url": "",
-    "database": "testwalk",
+    "port": 3306,
+    "database": "",
     "password": "",
-    "name": "testwalk",
-    "user": "",
-    "connector": "postgresql"
+    "name": "",
+    "connector": "mysql",
+    "user": ""
   }
 }
