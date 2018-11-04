@@ -1,0 +1,22 @@
+{
+  "name": "AmenityBuilding",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "amenity_id": {
+      "type": "number",
+      "required": true
+    },
+    "building_id": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

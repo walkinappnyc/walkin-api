@@ -1,0 +1,43 @@
+{
+  "name": "Timeline",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "string",
+      "dataType": "text",
+      "required": true
+    },
+    "image_id": {
+      "type": "number",
+      "required": true
+    },
+    "year": {
+      "type": "number",
+      "required": true
+    },
+    "created_at": {
+      "type": "date"
+    },
+    "updated_at": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "image": {
+      "type": "belongsTo",
+      "model": "Image",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,73 @@
+{
+  "name": "Building",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "yardi_code": {
+      "type": "string"
+    },
+    "voyager_code": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "string",
+      "dataType": "text",
+      "required": true
+    },
+    "neighborhood_id": {
+      "type": "number",
+      "required": true
+    },
+    "residential_rentals": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "commercial_office": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "commercial_retail": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "apply_link": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "date"
+    },
+    "updated_at": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "openHouses": {
+      "type": "hasMany",
+      "model": "OpenHouse",
+      "foreignKey": ""
+    },
+    "amenities": {
+      "type": "hasMany",
+      "model": "Amenity",
+      "foreignKey": "",
+      "through": "AmenityBuilding"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

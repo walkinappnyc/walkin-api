@@ -1,0 +1,41 @@
+{
+  "name": "Transportation",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "building_id": {
+      "type": "number"
+    },
+    "station_name": {
+      "type": "string",
+      "required": true
+    },
+    "station_service": {
+      "type": "string",
+      "required": true
+    },
+    "distance_to_station": {
+      "type": "string",
+      "required": true
+    },
+    "created_at": {
+      "type": "date"
+    },
+    "updated_at": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "building": {
+      "type": "belongsTo",
+      "model": "Building",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "AttractionRegion",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "attraction_id": {
+      "type": "number",
+      "required": true
+    },
+    "region_id": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,26 @@
+{
+  "name": "RegionWaitunit",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "region_id": {
+      "type": "number",
+      "required": true
+    },
+    "unit_id": {
+      "type": "number",
+      "required": true
+    },
+    "unit_size": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -14,25 +14,154 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "mysql",
+    "public": true
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "mysql",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "mysql",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "mysql",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "mysql",
     "public": false
+  },
+  "Incentive": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Job": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "SiteVar": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "FrequentlyAskedQuestion": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "FailedJob": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Building": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "OpenHouse": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Feature": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Unit": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "FeatureUnit": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Client": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "IncentiveUnit": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Region": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "RegionUser": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "BuildingUser": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Neighborhood": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Timeline": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Image": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "TenantLead": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Transportation": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "AttractionRegion": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Attraction": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Floorplan": {
+    "dataSource": "mysql",
+    "public": false
+  },
+  "MetaData": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Slideshow": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "NeighborhoodPointOfInterest": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "PointofInterest": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "PointofInterestCategories": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "RegionWaitunit": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Amenity": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "AmenityBuilding": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Address": {
+    "dataSource": "mysql",
+    "public": true
   }
 }

@@ -1,0 +1,145 @@
+{
+  "name": "Unit",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "yardi_code": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "default": "residential_rentals",
+      "required": true
+    },
+    "number": {
+      "type": "string",
+      "required": true
+    },
+    "floorplan_id": {
+      "type": "number"
+    },
+    "building_id": {
+      "type": "number",
+      "required": true
+    },
+    "feed_number_override": {
+      "type": "string"
+    },
+    "show_number": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "slug": {
+      "type": "string",
+      "required": true
+    },
+    "floor": {
+      "type": "string",
+      "required": true
+    },
+    "square_footage": {
+      "type": "number",
+      "required": true
+    },
+    "rooms": {
+      "type": "number",
+      "required": true,
+      "dataType": "decimal",
+      "precision": 4,
+      "scale": 1
+    },
+    "bedrooms": {
+      "type": "number",
+      "required": true
+    },
+    "bathrooms": {
+      "type": "number",
+      "required": true,
+      "dataType": "decimal",
+      "precision": 4,
+      "scale": 1
+    },
+    "price": {
+      "type": "number",
+      "required": true,
+      "dataType": "decimal",
+      "precision": 10,
+      "scale": 2
+    },
+    "lease_term": {
+      "type": "number",
+      "required": true,
+      "default": 12
+    },
+    "concession_months": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "concession_language": {
+      "type": "string"
+    },
+    "concession_expiration": {
+      "type": "string"
+    },
+    "disable_openhouse": {
+      "type": "string",
+      "default": "no"
+    },
+    "active_streeteasy": {
+      "type": "string",
+      "default": "no"
+    },
+    "body": {
+      "type": "string",
+      "dataType": "text",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    },
+    "featured": {
+      "type": "boolean",
+      "required": true
+    },
+    "version": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "apply_link": {
+      "type": "string"
+    },
+    "virtual_tour_id": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "date"
+    },
+    "updated_at": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "features": {
+      "type": "hasMany",
+      "model": "Feature",
+      "foreignKey": "",
+      "through": "FeatureUnit"
+    },
+    "incentives": {
+      "type": "hasMany",
+      "model": "Incentive",
+      "foreignKey": "",
+      "through": "IncentiveUnit"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

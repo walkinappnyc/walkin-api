@@ -1,0 +1,22 @@
+{
+  "name": "NeighborhoodPointOfInterest",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "neighborhood_id": {
+      "type": "number",
+      "required": true
+    },
+    "point_of_interest_id": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,34 @@
+{
+  "name": "PointofInterest",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "point_of_interest_category_id": {
+      "type": "number",
+      "required": true
+    },
+    "created_at": {
+      "type": "date"
+    },
+    "updated_at": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "neighborhood": {
+      "type": "belongsTo",
+      "model": "Neighborhood",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

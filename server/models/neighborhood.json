@@ -1,0 +1,48 @@
+{
+  "name": "Neighborhood",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true
+    },
+    "region_id": {
+      "type": "number",
+      "required": true
+    },
+    "body": {
+      "type": "string",
+      "dataType": "text"
+    },
+    "weight": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "created_at": {
+      "type": "date"
+    },
+    "updated_at": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "pointsofInterests": {
+      "type": "hasMany",
+      "model": "PointsofInterest",
+      "foreignKey": "",
+      "through": "NeighborhoodPointOfInterest"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

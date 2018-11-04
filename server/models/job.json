@@ -1,0 +1,49 @@
+{
+  "name": "Job",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "queue": {
+      "type": "string",
+      "required": true,
+      "index": true
+    },
+    "payload": {
+      "type": "string",
+      "dataType": "longtext",
+      "required": true
+    },
+    "attempts": {
+      "type": "number",
+      "dataType": "tinyint",
+      "required": true
+    },
+    "reserved": {
+      "type": "number",
+      "dataType": "tinyint",
+      "required": true,
+      "index": true
+    },
+    "reservred_at": {
+      "type": "number",
+      "index": true
+    },
+    "available_at": {
+      "type": "number",
+      "required": true
+    },
+    "created_at": {
+      "type": "number"
+    },
+    "updated_at": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,86 @@
+{
+  "name": "Region",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "hours": {
+      "type": "string",
+      "mysql": 
+      {
+        "dataType": "TEXT"
+      }
+    },
+    "apply_link": {
+      "type": "string",
+      "required": true
+    },
+    "hero_id": {
+      "type": "number",
+      "required": true
+    },
+    "default_building_id": {
+      "type": "number",
+      "required": true
+    },
+    "weight": {
+      "type": "number",
+      "default": 100
+    },
+    "created_at": {
+      "type": "date",
+      "mysql":
+      {
+        "default": "CURRENT_TIMESTAMP"
+      }
+    },
+    "updated_at": {
+      "type": "date",
+      "mysql":
+      {
+        "default": "CURRENT_TIMESTAMP"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {
+    "clients": {
+      "type": "hasMany",
+      "model": "Client",
+      "foreignKey": "",
+      "through": "RegionUser"
+    },
+    "attractions": {
+      "type": "hasAndBelongsToMany",
+      "model": "Attraction",
+      "foreignKey": ""
+    },
+    "attraction": {
+      "type": "belongsTo",
+      "model": "Attraction",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

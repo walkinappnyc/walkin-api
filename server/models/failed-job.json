@@ -1,0 +1,33 @@
+{
+  "name": "FailedJob",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "connection": {
+      "type": "string",
+      "dataType": "text",
+      "required": true
+    },
+    "queue": {
+      "type": "string",
+      "dataType": "text",
+      "required": true
+    },
+    "payload": {
+      "type": "string",
+      "dataType": "longtext",
+      "required": true
+    },
+    "failed_at": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

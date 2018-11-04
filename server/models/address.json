@@ -1,0 +1,59 @@
+{
+  "name": "Address",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "display_name": {
+      "type": "string",
+      "required": true
+    },
+    "street_1": {
+      "type": "string",
+      "required": true
+    },
+    "street_2": {
+      "type": "string"
+    },
+    "cross_street": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "state": {
+      "type": "string",
+      "required": true
+    },
+    "zip": {
+      "type": "string",
+      "required": true
+    },
+    "coordinates": {
+      "type": "geopoint",
+      "required": true
+    },
+    "addresable_id": {
+      "type": "number",
+      "dataType": "mediumint",
+      "required": true
+    },
+    "addressable_type": {
+      "type": "string",
+      "required": true
+    },
+    "created_at": {
+      "type": "date"
+    },
+    "updated_at": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

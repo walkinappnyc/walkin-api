@@ -1,0 +1,22 @@
+{
+  "name": "FeatureUnit",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "unit_id": {
+      "type": "number",
+      "required": true
+    },
+    "feature_id": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

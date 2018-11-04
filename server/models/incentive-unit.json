@@ -1,0 +1,22 @@
+{
+  "name": "IncentiveUnit",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "incentive_id": {
+      "type": "number",
+      "required": true
+    },
+    "unit_id": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
