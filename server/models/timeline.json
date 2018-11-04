@@ -12,6 +12,7 @@
     },
     "body": {
       "type": "string",
+      "dataType": "text",
       "required": true
     },
     "image_id": {
@@ -19,7 +20,7 @@
       "required": true
     },
     "year": {
-      "type": "any",
+      "type": "number",
       "required": true
     },
     "created_at": {

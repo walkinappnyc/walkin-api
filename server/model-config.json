@@ -140,7 +140,7 @@
     "dataSource": "mysql",
     "public": true
   },
-  "PointsofInterest": {
+  "PointofInterest": {
     "dataSource": "mysql",
     "public": true
   },

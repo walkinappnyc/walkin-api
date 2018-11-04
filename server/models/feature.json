@@ -11,7 +11,7 @@
       "required": true
     },
     "feed_meta": {
-      "type": "any",
+      "type": "object",
       "required": true
     },
     "created_at": {

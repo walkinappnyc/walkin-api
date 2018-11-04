@@ -15,8 +15,7 @@
       "required": true
     },
     "group": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "tags": {
       "type": "string",

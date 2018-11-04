@@ -16,15 +16,20 @@
       "type": "string",
       "required": true
     },
+    "slug": {
+      "type": "string",
+      "required": true
+    },
     "body": {
-      "type": "any",
+      "type": "string",
+      "dataType": "text",
       "required": true
     },
     "neighborhood_id": {
       "type": "number",
       "required": true
     },
-    "residental_rentals": {
+    "residential_rentals": {
       "type": "boolean",
       "required": true,
       "default": true

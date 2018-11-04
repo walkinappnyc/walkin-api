@@ -25,7 +25,11 @@
       "required": true
     },
     "hours": {
-      "type": "string"
+      "type": "string",
+      "mysql": 
+      {
+        "dataType": "TEXT"
+      }
     },
     "apply_link": {
       "type": "string",
@@ -40,10 +44,22 @@
       "required": true
     },
     "weight": {
-      "type": "number"
+      "type": "number",
+      "default": 100
     },
     "created_at": {
-      "type": "date"
+      "type": "date",
+      "mysql":
+      {
+        "default": "CURRENT_TIMESTAMP"
+      }
+    },
+    "updated_at": {
+      "type": "date",
+      "mysql":
+      {
+        "default": "CURRENT_TIMESTAMP"
+      }
     }
   },
   "validations": [],

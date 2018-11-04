@@ -1,5 +1,5 @@
 {
-  "name": "PointsofInterest",
+  "name": "PointofInterest",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -15,6 +15,9 @@
       "required": true
     },
     "created_at": {
+      "type": "date"
+    },
+    "updated_at": {
       "type": "date"
     }
   },

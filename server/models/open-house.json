@@ -17,6 +17,9 @@
     "details": {
       "type": "string"
     },
+    "building_id": {
+      "type": "number"
+    },
     "created_at": {
       "type": "date"
     },

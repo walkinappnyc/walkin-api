@@ -38,6 +38,7 @@
     },
     "addresable_id": {
       "type": "number",
+      "dataType": "mediumint",
       "required": true
     },
     "addressable_type": {

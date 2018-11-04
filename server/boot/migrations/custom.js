@@ -9,7 +9,27 @@ const models = [
   'Building',
   'OpenHouse',
   'Feature',
-  'Unit'
+  'Unit',
+  'Region',
+  'TenantLead',
+  'Address',
+  'FailedJob',
+  'OpenHouse',
+  'Timeline',
+  'Neighborhood',
+  'Transportation',
+  'MetaData',
+  'Floorplan',
+  'Attraction',
+  'Slideshow',
+  'Amenity',
+  'SiteVar',
+  'Feature',
+  'FrequentlyAskedQuestion',
+  'PointofInterestCategories',
+  'PointofInterest',
+  'Incentive',
+  'Image'
 ]
 
 module.exports = function migrateAccountModels (app, next) {

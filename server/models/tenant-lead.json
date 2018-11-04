@@ -22,18 +22,21 @@
       "type": "string"
     },
     "questions": {
-      "type": "string"
+      "type": "string",
+      "dataType": "text"
     },
     "region_id": {
       "type": "number",
       "required": true
     },
     "building_id": {
-      "type": "number"
+      "type": "number",
+      "dataType": "mediumint"
     },
     "status": {
-      "type": "any",
-      "required": true
+      "type": "string",
+      "required": true,
+      "default": "new"
     },
     "user_id": {
       "type": "number"

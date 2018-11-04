@@ -11,11 +11,13 @@
       "required": true
     },
     "answer": {
-      "type": "any",
+      "type": "string",
+      "dataType": "text",
       "required": true
     },
     "weight": {
-      "type": "any",
+      "type": "number",
+      "default": 0,
       "required": true
     },
     "created_at": {

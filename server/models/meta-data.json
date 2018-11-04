@@ -1,5 +1,5 @@
 {
-  "name": "MetaData",
+  "name": "",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -15,8 +15,12 @@
     "keywords": {
       "type": "string"
     },
+    "robots": {
+      "type": "string"
+    },
     "metadatable_id": {
       "type": "number",
+      "dataType": "mediumint",
       "required": true
     },
     "metadatable_type": {

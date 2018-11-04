@@ -4,12 +4,12 @@
     "connector": "memory"
   },
   "mysql": {
-    "host": "localhost",
+    "host": "mysqlDb",
     "port": 3306,
-    "database": "",
-    "password": "",
-    "name": "",
+    "database": "strongdevdb",
+    "password": "strongdevpwd",
+    "name": "mysql",
     "connector": "mysql",
-    "user": ""
+    "user": "strongdevuser"
   }
 }

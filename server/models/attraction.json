@@ -12,6 +12,7 @@
     },
     "body": {
       "type": "string",
+      "dataType": "text",
       "required": true
     },
     "image_id": {
