@@ -19,7 +19,14 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "units": {
+      "type": "hasMany",
+      "model": "Unit",
+      "foreignKey": "",
+      "through": "IncentiveUnit"
+    }
+  },
   "acls": [],
   "methods": {}
 }

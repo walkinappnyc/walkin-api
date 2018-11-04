@@ -22,7 +22,19 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "building": {
+      "type": "belongsTo",
+      "model": "Building",
+      "foreignkey": ""
+    },
+    "units": {
+      "type": "hasMany",
+      "model": "Unit",
+      "foreignKey": "",
+      "through": "FeatureUnit"
+    }
+  },
   "acls": [],
   "methods": {}
 }

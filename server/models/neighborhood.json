@@ -14,10 +14,6 @@
       "type": "string",
       "required": true
     },
-    "region_id": {
-      "type": "number",
-      "required": true
-    },
     "body": {
       "type": "string",
       "dataType": "text"
@@ -39,6 +35,22 @@
     "pointsofInterests": {
       "type": "hasMany",
       "model": "PointsofInterest",
+      "foreignKey": "",
+      "through": "NeighborhoodPointOfInterest"
+    },
+    "region": {
+      "type": "belongsTo",
+      "model": "Region",
+      "foreignkey": ""
+    },
+    "buildings": {
+      "type": "hasMany",
+      "model": "Building",
+      "foreignKey": ""
+    },
+    "pointofInterests": {
+      "type": "hasMany",
+      "model": "PointofInterest",
       "foreignKey": "",
       "through": "NeighborhoodPointOfInterest"
     }

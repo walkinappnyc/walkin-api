@@ -6,21 +6,24 @@
     "validateUpsert": true
   },
   "properties": {
-    "region_id": {
-      "type": "number",
-      "required": true
-    },
-    "unit_id": {
-      "type": "number",
-      "required": true
-    },
     "unit_size": {
       "type": "number",
       "required": true
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "unit": {
+      "type": "belongsTo",
+      "model": "Unit",
+      "foreignKey": ""
+    },
+    "region": {
+      "type": "belongsTo",
+      "model": "Region",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

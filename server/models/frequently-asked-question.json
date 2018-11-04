@@ -12,13 +12,13 @@
     },
     "answer": {
       "type": "string",
-      "dataType": "text",
-      "required": true
+      "required": true,
+      "dataType": "text"
     },
     "weight": {
       "type": "number",
-      "default": 0,
-      "required": true
+      "required": true,
+      "default": 0
     },
     "created_at": {
       "type": "date"

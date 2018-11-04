@@ -16,8 +16,8 @@
     },
     "value": {
       "type": "string",
-      "dataType": "text",
-      "required": true
+      "required": true,
+      "dataType": "text"
     },
     "type": {
       "type": "string",

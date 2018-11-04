@@ -92,7 +92,7 @@
     "dataSource": "mysql",
     "public": true
   },
-  "BuildingUser": {
+  "BuildingClient": {
     "dataSource": "mysql",
     "public": true
   },
