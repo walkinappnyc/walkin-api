@@ -163,5 +163,9 @@
   "Address": {
     "dataSource": "mysql",
     "public": true
+  },
+  "Imageable": {
+    "dataSource": "mysql",
+    "public": true
   }
 }

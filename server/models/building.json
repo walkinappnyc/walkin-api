@@ -88,6 +88,22 @@
       "model": "Client",
       "foreignKey": "",
       "through": "BuildingClient"
+    },
+    "metadatas": {
+      "type": "hasOne",
+      "model": "MetaData",
+      "polymorphic": "metadatable"
+    },
+    "images": {
+      "type": "hasMany",
+      "model": "Image",
+      "through": "Imageable",
+      "polymorphic": "imageable"
+    },
+    "addressables": {
+      "type": "hasOne",
+      "model": "Address",
+      "polymorphic": "addressable"
     }
   },
   "acls": [],

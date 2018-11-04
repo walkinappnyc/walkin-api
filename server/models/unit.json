@@ -152,6 +152,17 @@
       "model": "Region",
       "foreignKey": "",
       "through": "RegionWaitunit"
+    },
+    "metadatas": {
+      "type": "hasOne",
+      "model": "MetaData",
+      "polymorphic": "metadatable"
+    },
+    "images": {
+      "type": "hasMany",
+      "model": "Image",
+      "through": "Imageable",
+      "polymorphic": "imageable"
     }
   },
   "acls": [],

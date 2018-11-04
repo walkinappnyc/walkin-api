@@ -36,7 +36,9 @@ const models = [
   'AttractionRegion',
   'NeighborhoodPointOfInterest',
   'AmenityBuilding',
-  'RegionWaitunit'
+  'RegionWaitunit',
+  'MetaData',
+  'Imageable'
 ]
 
 module.exports = function migrateAccountModels (app, next) {

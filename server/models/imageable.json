@@ -1,0 +1,33 @@
+{
+  "name": "Imageable",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "weight": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {
+    "imageable": {
+      "type": "belongsTo",
+      "polymorphic": true
+    },
+    "image": {
+      "type": "belongsTo",
+      "model": "Image",
+      "foreignKey": "",
+      "imageable": {
+        "type": "belongsTo",
+        "polymorphic": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

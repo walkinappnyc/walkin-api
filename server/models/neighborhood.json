@@ -53,6 +53,16 @@
       "model": "PointofInterest",
       "foreignKey": "",
       "through": "NeighborhoodPointOfInterest"
+    },
+    "metadatas": {
+      "type": "hasOne",
+      "model": "MetaData",
+      "polymorphic": "metadatable"
+    },
+    "addressables": {
+      "type": "hasOne",
+      "model": "Address",
+      "polymorphic": "addressable"
     }
   },
   "acls": [],
