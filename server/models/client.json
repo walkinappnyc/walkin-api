@@ -46,7 +46,7 @@
       "type": "hasMany",
       "model": "Building",
       "foreignKey": "",
-      "through": "BuildingUser"
+      "through": "BuildingClient"
     }
   },
   "acls": [],

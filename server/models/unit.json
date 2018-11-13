@@ -11,18 +11,11 @@
     },
     "type": {
       "type": "string",
-      "default": "residential_rentals",
-      "required": true
+      "required": true,
+      "default": "residential_rentals"
     },
     "number": {
       "type": "string",
-      "required": true
-    },
-    "floorplan_id": {
-      "type": "number"
-    },
-    "building_id": {
-      "type": "number",
       "required": true
     },
     "feed_number_override": {
@@ -96,8 +89,8 @@
     },
     "body": {
       "type": "string",
-      "dataType": "text",
-      "required": true
+      "required": true,
+      "dataType": "text"
     },
     "status": {
       "type": "string",
@@ -138,6 +131,38 @@
       "model": "Incentive",
       "foreignKey": "",
       "through": "IncentiveUnit"
+    },
+    "floorplan": {
+      "type": "belongsTo",
+      "model": "Floorplan",
+      "foreignKey": ""
+    },
+    "building": {
+      "type": "belongsTo",
+      "model": "Building",
+      "foreignKey": ""
+    },
+    "tenantleads": {
+      "type": "hasMany",
+      "model": "TenantLead",
+      "foreignKey": ""
+    },
+    "regions": {
+      "type": "hasMany",
+      "model": "Region",
+      "foreignKey": "",
+      "through": "RegionWaitunit"
+    },
+    "metadatas": {
+      "type": "hasOne",
+      "model": "MetaData",
+      "polymorphic": "metadatable"
+    },
+    "images": {
+      "type": "hasMany",
+      "model": "Image",
+      "through": "Imageable",
+      "polymorphic": "imageable"
     }
   },
   "acls": [],

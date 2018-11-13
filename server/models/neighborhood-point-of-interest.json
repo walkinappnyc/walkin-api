@@ -5,18 +5,20 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {
-    "neighborhood_id": {
-      "type": "number",
-      "required": true
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "neighborhood": {
+      "type": "belongsTo",
+      "model": "Neighborhood",
+      "foreignKey": ""
     },
-    "point_of_interest_id": {
-      "type": "number",
-      "required": true
+    "pointofInterest": {
+      "type": "belongsTo",
+      "model": "PointofInterest",
+      "foreignKey": ""
     }
   },
-  "validations": [],
-  "relations": {},
   "acls": [],
   "methods": {}
 }

@@ -5,18 +5,20 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {
-    "incentive_id": {
-      "type": "number",
-      "required": true
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "incentive": {
+      "type": "belongsTo",
+      "model": "Incentive",
+      "foreignKey": ""
     },
-    "unit_id": {
-      "type": "number",
-      "required": true
+    "unit": {
+      "type": "belongsTo",
+      "model": "Unit",
+      "foreignKey": ""
     }
   },
-  "validations": [],
-  "relations": {},
   "acls": [],
   "methods": {}
 }

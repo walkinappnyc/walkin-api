@@ -29,7 +29,16 @@ const models = [
   'PointofInterestCategories',
   'PointofInterest',
   'Incentive',
-  'Image'
+  'Image',
+  'FeatureUnit',
+  'IncentiveUnit',
+  'BuildingClient',
+  'AttractionRegion',
+  'NeighborhoodPointOfInterest',
+  'AmenityBuilding',
+  'RegionWaitunit',
+  'MetaData',
+  'Imageable'
 ]
 
 module.exports = function migrateAccountModels (app, next) {

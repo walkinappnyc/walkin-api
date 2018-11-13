@@ -12,12 +12,8 @@
     },
     "body": {
       "type": "string",
-      "dataType": "text",
-      "required": true
-    },
-    "image_id": {
-      "type": "number",
-      "required": true
+      "required": true,
+      "dataType": "text"
     },
     "year": {
       "type": "number",

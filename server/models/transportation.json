@@ -6,9 +6,6 @@
     "validateUpsert": true
   },
   "properties": {
-    "building_id": {
-      "type": "number"
-    },
     "station_name": {
       "type": "string",
       "required": true

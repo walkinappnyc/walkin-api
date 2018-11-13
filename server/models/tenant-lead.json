@@ -25,24 +25,10 @@
       "type": "string",
       "dataType": "text"
     },
-    "region_id": {
-      "type": "number",
-      "required": true
-    },
-    "building_id": {
-      "type": "number",
-      "dataType": "mediumint"
-    },
     "status": {
       "type": "string",
       "required": true,
       "default": "new"
-    },
-    "user_id": {
-      "type": "number"
-    },
-    "unit_id": {
-      "type": "number"
     },
     "created_at": {
       "type": "date"
@@ -63,7 +49,7 @@
       "model": "Unit",
       "foreignKey": ""
     },
-    "n": {
+    "region": {
       "type": "belongsTo",
       "model": "Region",
       "foreignKey": ""

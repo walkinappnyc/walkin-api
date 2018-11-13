@@ -22,12 +22,8 @@
     },
     "body": {
       "type": "string",
-      "dataType": "text",
-      "required": true
-    },
-    "neighborhood_id": {
-      "type": "number",
-      "required": true
+      "required": true,
+      "dataType": "text"
     },
     "residential_rentals": {
       "type": "boolean",
@@ -66,6 +62,48 @@
       "model": "Amenity",
       "foreignKey": "",
       "through": "AmenityBuilding"
+    },
+    "units": {
+      "type": "hasMany",
+      "model": "Unit",
+      "foreignKey": ""
+    },
+    "transportations": {
+      "type": "hasMany",
+      "model": "Transportation",
+      "foreignKey": ""
+    },
+    "tenantleads": {
+      "type": "hasMany",
+      "model": "TenantLead",
+      "foreignKey": ""
+    },
+    "neighborhood": {
+      "type": "belongsTo",
+      "model": "Neighborhood",
+      "foreignkey": ""
+    },
+    "clients": {
+      "type": "hasMany",
+      "model": "Client",
+      "foreignKey": "",
+      "through": "BuildingClient"
+    },
+    "metadatas": {
+      "type": "hasOne",
+      "model": "MetaData",
+      "polymorphic": "metadatable"
+    },
+    "images": {
+      "type": "hasMany",
+      "model": "Image",
+      "through": "Imageable",
+      "polymorphic": "imageable"
+    },
+    "addressables": {
+      "type": "hasOne",
+      "model": "Address",
+      "polymorphic": "addressable"
     }
   },
   "acls": [],

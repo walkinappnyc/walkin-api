@@ -36,15 +36,6 @@
       "type": "geopoint",
       "required": true
     },
-    "addresable_id": {
-      "type": "number",
-      "dataType": "mediumint",
-      "required": true
-    },
-    "addressable_type": {
-      "type": "string",
-      "required": true
-    },
     "created_at": {
       "type": "date"
     },
@@ -53,7 +44,12 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "addressable": {
+      "type": "belongsTo",
+      "polymorphic": true
+    }
+  },
   "acls": [],
   "methods": {}
 }

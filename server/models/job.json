@@ -13,19 +13,19 @@
     },
     "payload": {
       "type": "string",
-      "dataType": "longtext",
-      "required": true
+      "required": true,
+      "dataType": "longtext"
     },
     "attempts": {
       "type": "number",
-      "dataType": "tinyint",
-      "required": true
+      "required": true,
+      "dataType": "tinyint"
     },
     "reserved": {
       "type": "number",
-      "dataType": "tinyint",
       "required": true,
-      "index": true
+      "index": true,
+      "dataType": "tinyint"
     },
     "reservred_at": {
       "type": "number",

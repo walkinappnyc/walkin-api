@@ -17,9 +17,6 @@
     "details": {
       "type": "string"
     },
-    "building_id": {
-      "type": "number"
-    },
     "created_at": {
       "type": "date"
     },
@@ -28,7 +25,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "building": {
+      "type": "belongsTo",
+      "model": "Building",
+      "foreignkey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

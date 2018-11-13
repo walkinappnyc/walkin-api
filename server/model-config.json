@@ -92,7 +92,7 @@
     "dataSource": "mysql",
     "public": true
   },
-  "BuildingUser": {
+  "BuildingClient": {
     "dataSource": "mysql",
     "public": true
   },
@@ -161,6 +161,10 @@
     "public": true
   },
   "Address": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Imageable": {
     "dataSource": "mysql",
     "public": true
   }

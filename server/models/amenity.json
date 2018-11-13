@@ -22,7 +22,14 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "buildings": {
+      "type": "hasMany",
+      "model": "Building",
+      "foreignKey": "",
+      "through": "AmenityBuilding"
+    }
+  },
   "acls": [],
   "methods": {}
 }

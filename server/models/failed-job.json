@@ -8,18 +8,18 @@
   "properties": {
     "connection": {
       "type": "string",
-      "dataType": "text",
-      "required": true
+      "required": true,
+      "dataType": "text"
     },
     "queue": {
       "type": "string",
-      "dataType": "text",
-      "required": true
+      "required": true,
+      "dataType": "text"
     },
     "payload": {
       "type": "string",
-      "dataType": "longtext",
-      "required": true
+      "required": true,
+      "dataType": "longtext"
     },
     "failed_at": {
       "type": "date",

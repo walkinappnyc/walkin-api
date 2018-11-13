@@ -26,8 +26,7 @@
     },
     "hours": {
       "type": "string",
-      "mysql": 
-      {
+      "mysql": {
         "dataType": "TEXT"
       }
     },
@@ -49,15 +48,13 @@
     },
     "created_at": {
       "type": "date",
-      "mysql":
-      {
+      "mysql": {
         "default": "CURRENT_TIMESTAMP"
       }
     },
     "updated_at": {
       "type": "date",
-      "mysql":
-      {
+      "mysql": {
         "default": "CURRENT_TIMESTAMP"
       }
     }
@@ -71,14 +68,41 @@
       "through": "RegionUser"
     },
     "attractions": {
-      "type": "hasAndBelongsToMany",
+      "type": "hasMany",
       "model": "Attraction",
+      "foreignKey": "",
+      "through": "AttractionRegion"
+    },
+    "image": {
+      "type": "belongsTo",
+      "model": "Image",
+      "foreignkey": ""
+    },
+    "building": {
+      "type": "belongsTo",
+      "model": "Building",
+      "foreignkey": ""
+    },
+    "neighborhoods": {
+      "type": "hasMany",
+      "model": "Neighborhood",
       "foreignKey": ""
     },
-    "attraction": {
-      "type": "belongsTo",
-      "model": "Attraction",
-      "foreignKey": ""
+    "units": {
+      "type": "hasMany",
+      "model": "Unit",
+      "foreignKey": "",
+      "through": "RegionWaitunit"
+    },
+    "metadatas": {
+      "type": "hasOne",
+      "model": "MetaData",
+      "polymorphic": "metadatable"
+    },
+    "addressables": {
+      "type": "hasOne",
+      "model": "Address",
+      "polymorphic": "addressable"
     }
   },
   "acls": [],
