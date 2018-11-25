@@ -45,6 +45,9 @@
     },
     "xml_id": {
       "type": "string",
+      "index": {
+        "unique": true
+      },
       "required": true
     }
   },
