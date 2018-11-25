@@ -1,0 +1,55 @@
+{
+  "name": "Property",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "landlord": {
+      "type": "object",
+      "required": true
+    },
+    "location": {
+      "type": "object",
+      "required": true
+    },
+    "contact": {
+      "type": "object",
+      "required": true
+    },
+    "agents": {
+      "type": [
+        "object"
+      ],
+      "required": true
+    },
+    "details": {
+      "type": "object",
+      "required": true
+    },
+    "open_houses": {
+      "type": [
+        "object"
+      ],
+      "required": true
+    },
+    "media": {
+      "type": [
+        "object"
+      ],
+      "required": true
+    },
+    "yardi_code": {
+      "type": "string"
+    },
+    "xml_id": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

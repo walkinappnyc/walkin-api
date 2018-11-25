@@ -38,7 +38,8 @@ const models = [
   'AmenityBuilding',
   'RegionWaitunit',
   'MetaData',
-  'Imageable'
+  'Imageable',
+  'Property',
 ]
 
 module.exports = function migrateAccountModels (app, next) {

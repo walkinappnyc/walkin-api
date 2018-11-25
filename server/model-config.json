@@ -167,5 +167,9 @@
   "Imageable": {
     "dataSource": "mysql",
     "public": true
+  },
+  "Property": {
+    "dataSource": "mysql",
+    "public": true
   }
 }
