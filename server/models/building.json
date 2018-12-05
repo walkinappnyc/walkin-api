@@ -104,6 +104,12 @@
       "type": "hasOne",
       "model": "Address",
       "polymorphic": "addressable"
+    },
+    "properties": {
+      "type": "hasMany",
+      "model": "Property",
+      "foreignKey": "",
+      "through": "PropertyBuilding"
     }
   },
   "acls": [],

@@ -1,0 +1,24 @@
+{
+  "name": "BuildingLandlord",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "building": {
+      "type": "belongsTo",
+      "model": "Building",
+      "foreignKey": ""
+    },
+    "landlord": {
+      "type": "belongsTo",
+      "model": "Landlord",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -171,5 +171,17 @@
   "Property": {
     "dataSource": "mysql",
     "public": true
+  },
+  "Landlord": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "PropertyBuilding": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "BuildingLandlord": {
+    "dataSource": "mysql",
+    "public": true
   }
 }
