@@ -10,7 +10,11 @@ module.exports = function(Property) {
       console.log(`${isActive}`)
       instance[0].updateAttributes({isActive: isActive}, function (err, property) {
         console.log(`${JSON.stringify(property)}`)
-        return cb(null, property)
+        if (err) {
+          return cb(err)
+        } else {
+          return cb(null, property)
+        }
       })
     })
   }
@@ -24,7 +28,11 @@ module.exports = function(Property) {
       console.log(`${isFeatured}`)
       instance[0].updateAttributes({isFeatured: isFeatured}, function (err, property) {
         console.log(`${JSON.stringify(property)}`)
-        return cb(null, property)
+        if (err) {
+          return cb(err)
+        } else {
+          return cb(null, property)
+        }
       })
     })
   }

@@ -13,16 +13,24 @@ module.exports = function(Landlord) {
       instance[0].updateAttributes({isActive: isActive}, function(err, landlord) {
         console.log(`${JSON.stringify(landlord)}`)
         console.log(`${JSON.stringify(instance)}`)
-        
-        app.models.Property.find({where: {landlordId: landlord.id}}, function(err, properties) {
-          console.log(`${JSON.stringify(properties)}`)
-          properties.forEach(item => {
-            item.updateAttributes({isActive: isActive}, function(err, instance) {
-              console.log(`${instance}`)
-            })
+        if (err) {
+          return cb(err)
+        } else {
+          app.models.Property.find({where: {landlordId: landlord.id}}, function (err, properties) {
+            console.log(`${JSON.stringify(properties)}`)
+
+            if (err) {
+              return cb(err)
+            } else {
+              properties.forEach(item => {
+                item.updateAttributes({ isActive: isActive }, function (err, instance) {
+                  console.log(`${instance}`)
+                })
+              })
+            }
           })
-        })
-        return cb(null, landlord)
+          return cb(null, landlord)
+        }
       })
     })
   }
