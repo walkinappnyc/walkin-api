@@ -37,6 +37,31 @@ module.exports = function(Property) {
     })
   }
 
+  Property.updateAllIds = function (data, cb) {
+    console.log(`${data}`)
+    let name = "Michael Angelo"
+    Property.updateAll({landlordId: null}, {landlordId: 1}, function(err, property) {
+      console.log(`${JSON.stringify(property)}`)
+    })
+  }
+
+  Property.updateAllActive = function (data, cb) {
+    console.log(`${data}`)
+    let name = "Michael Angelo"
+    Property.updateAll({isActive: null}, {isActive: true}, function (err, property) {
+      console.log(`${JSON.stringify(property)}`)
+    })
+  }
+
+
+  Property.updateAllIsFeatured = function (data, cb) {
+    console.log(`${data}`)
+    let name = "Michael Angelo"
+    Property.updateAll({isFeatured: null}, {isFeatured: true}, function (err, property) {
+      console.log(`${JSON.stringify(property)}`)
+    })
+  }
+
   Property.remoteMethod(
     'isActive',
     {
@@ -50,6 +75,33 @@ module.exports = function(Property) {
     'isFeatured',
     {
       http: { path: '/isFeatured', verb: 'patch' },
+      accepts: { arg: 'data', type: 'object', http: { source: 'body' } },
+      returns: { arg: 'data', type: 'object' }
+    }
+  )
+
+  Property.remoteMethod(
+    'updateAllIds',
+    {
+      http: { path: '/updateAllIds', verb: 'patch' },
+      accepts: { arg: 'data', type: 'object', http: { source: 'body' } },
+      returns: { arg: 'data', type: 'object' }
+    }
+  )
+
+  Property.remoteMethod(
+    'updateAllActive',
+    {
+      http: { path: '/updateAllActive', verb: 'patch' },
+      accepts: { arg: 'data', type: 'object', http: { source: 'body' } },
+      returns: { arg: 'data', type: 'object' }
+    }
+  )
+
+  Property.remoteMethod(
+    'updateAllIsFeatured',
+    {
+      http: { path: '/updateAllIsFeatured', verb: 'patch' },
       accepts: { arg: 'data', type: 'object', http: { source: 'body' } },
       returns: { arg: 'data', type: 'object' }
     }
