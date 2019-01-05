@@ -40,6 +40,8 @@ const models = [
   'MetaData',
   'Imageable',
   'Property',
+  'BuildingLandlord',
+  'PropertyBuilding'
 ]
 
 module.exports = function migrateAccountModels (app, next) {

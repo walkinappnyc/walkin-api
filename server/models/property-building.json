@@ -1,0 +1,24 @@
+{
+  "name": "PropertyBuilding",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "property": {
+      "type": "belongsTo",
+      "model": "Property",
+      "foreignKey": ""
+    },
+    "building": {
+      "type": "belongsTo",
+      "model": "Building",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

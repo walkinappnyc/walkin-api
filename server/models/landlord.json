@@ -1,0 +1,33 @@
+{
+  "name": "Landlord",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "xml_feed_url": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "company": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "buildings": {
+      "type": "hasMany",
+      "model": "Building",
+      "foreignKey": "",
+      "through": "BuildingLandlord"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
