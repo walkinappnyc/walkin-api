@@ -1,5 +1,5 @@
 {
-  "name": "AmenityBuilding",
+  "name": "BuildingLandlord",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -8,14 +8,14 @@
   "properties": {},
   "validations": [],
   "relations": {
-    "amenity": {
-      "type": "belongsTo",
-      "model": "Amenity",
-      "foreignKey": ""
-    },
     "building": {
       "type": "belongsTo",
       "model": "Building",
+      "foreignKey": ""
+    },
+    "landlord": {
+      "type": "belongsTo",
+      "model": "Landlord",
       "foreignKey": ""
     }
   },

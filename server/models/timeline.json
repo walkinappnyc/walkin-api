@@ -12,14 +12,11 @@
     },
     "body": {
       "type": "string",
-      "required": true
-    },
-    "image_id": {
-      "type": "number",
-      "required": true
+      "required": true,
+      "dataType": "text"
     },
     "year": {
-      "type": "any",
+      "type": "number",
       "required": true
     },
     "created_at": {

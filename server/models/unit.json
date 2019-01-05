@@ -10,8 +10,9 @@
       "type": "string"
     },
     "type": {
-      "type": "any",
-      "required": true
+      "type": "string",
+      "required": true,
+      "default": "residential_rentals"
     },
     "number": {
       "type": "string",
@@ -38,24 +39,34 @@
       "required": true
     },
     "rooms": {
-      "type": "any",
-      "required": true
+      "type": "number",
+      "required": true,
+      "dataType": "decimal",
+      "precision": 4,
+      "scale": 1
     },
     "bedrooms": {
       "type": "number",
       "required": true
     },
     "bathrooms": {
-      "type": "any",
-      "required": true
+      "type": "number",
+      "required": true,
+      "dataType": "decimal",
+      "precision": 4,
+      "scale": 1
     },
     "price": {
-      "type": "any",
-      "required": true
+      "type": "number",
+      "required": true,
+      "dataType": "decimal",
+      "precision": 10,
+      "scale": 2
     },
     "lease_term": {
       "type": "number",
-      "required": true
+      "required": true,
+      "default": 12
     },
     "concession_months": {
       "type": "number",
@@ -63,12 +74,10 @@
       "default": 0
     },
     "concession_language": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "concession_expiration": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "disable_openhouse": {
       "type": "string",
@@ -79,11 +88,12 @@
       "default": "no"
     },
     "body": {
-      "type": "any",
-      "required": true
+      "type": "string",
+      "required": true,
+      "dataType": "text"
     },
     "status": {
-      "type": "any",
+      "type": "string",
       "required": true
     },
     "featured": {
@@ -91,8 +101,9 @@
       "required": true
     },
     "version": {
-      "type": "any",
-      "required": true
+      "type": "number",
+      "required": true,
+      "default": 0
     },
     "apply_link": {
       "type": "string"
@@ -101,6 +112,9 @@
       "type": "string"
     },
     "created_at": {
+      "type": "date"
+    },
+    "updated_at": {
       "type": "date"
     }
   },
@@ -117,6 +131,38 @@
       "model": "Incentive",
       "foreignKey": "",
       "through": "IncentiveUnit"
+    },
+    "floorplan": {
+      "type": "belongsTo",
+      "model": "Floorplan",
+      "foreignKey": ""
+    },
+    "building": {
+      "type": "belongsTo",
+      "model": "Building",
+      "foreignKey": ""
+    },
+    "tenantleads": {
+      "type": "hasMany",
+      "model": "TenantLead",
+      "foreignKey": ""
+    },
+    "regions": {
+      "type": "hasMany",
+      "model": "Region",
+      "foreignKey": "",
+      "through": "RegionWaitunit"
+    },
+    "metadatas": {
+      "type": "hasOne",
+      "model": "MetaData",
+      "polymorphic": "metadatable"
+    },
+    "images": {
+      "type": "hasMany",
+      "model": "Image",
+      "through": "Imageable",
+      "polymorphic": "imageable"
     }
   },
   "acls": [],

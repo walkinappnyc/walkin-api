@@ -5,18 +5,20 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {
-    "unit_id": {
-      "type": "number",
-      "required": true
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "feature": {
+      "type": "belongsTo",
+      "model": "Feature",
+      "foreignKey": ""
     },
-    "feature_id": {
-      "type": "number",
-      "required": true
+    "unit": {
+      "type": "belongsTo",
+      "model": "Unit",
+      "foreignKey": ""
     }
   },
-  "validations": [],
-  "relations": {},
   "acls": [],
   "methods": {}
 }

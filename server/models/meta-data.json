@@ -15,13 +15,8 @@
     "keywords": {
       "type": "string"
     },
-    "metadatable_id": {
-      "type": "number",
-      "required": true
-    },
-    "metadatable_type": {
-      "type": "string",
-      "required": true
+    "robots": {
+      "type": "string"
     },
     "created_at": {
       "type": "date"
@@ -31,7 +26,12 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "metadatable": {
+      "type": "belongsTo",
+      "polymorphic": true
+    }
+  },
   "acls": [],
   "methods": {}
 }

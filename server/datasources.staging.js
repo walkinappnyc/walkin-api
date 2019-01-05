@@ -1,13 +1,13 @@
 'use strict'
 
 module.exports = {
-  "testwalk": {
+  "mysql": {
     "host": "",
-    "port": 5432,
-    "url": process.env.DATABASE_URL,
+    "port": 3306,
+    "url": process.env.JAWSDB_URL,
     "password": "",
-    "name": "testwalk",
+    "name": "mysql",
     "user": "",
-    "connector": "postgresql"
+    "connector": "mysql"
   }
 }

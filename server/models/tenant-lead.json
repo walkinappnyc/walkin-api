@@ -22,24 +22,13 @@
       "type": "string"
     },
     "questions": {
-      "type": "string"
-    },
-    "region_id": {
-      "type": "number",
-      "required": true
-    },
-    "building_id": {
-      "type": "number"
+      "type": "string",
+      "dataType": "text"
     },
     "status": {
-      "type": "any",
-      "required": true
-    },
-    "user_id": {
-      "type": "number"
-    },
-    "unit_id": {
-      "type": "number"
+      "type": "string",
+      "required": true,
+      "default": "new"
     },
     "created_at": {
       "type": "date"
@@ -60,7 +49,7 @@
       "model": "Unit",
       "foreignKey": ""
     },
-    "n": {
+    "region": {
       "type": "belongsTo",
       "model": "Region",
       "foreignKey": ""

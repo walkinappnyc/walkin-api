@@ -1,5 +1,5 @@
 {
-  "name": "BuildingUser",
+  "name": "BuildingClient",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -16,7 +16,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "building": {
+      "type": "belongsTo",
+      "model": "Building",
+      "foreignKey": ""
+    },
+    "client": {
+      "type": "belongsTo",
+      "model": "Client",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

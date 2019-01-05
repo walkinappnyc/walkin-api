@@ -15,11 +15,12 @@
       "required": true
     },
     "value": {
-      "type": "any",
-      "required": true
+      "type": "string",
+      "required": true,
+      "dataType": "text"
     },
     "type": {
-      "type": "any",
+      "type": "string",
       "required": true
     },
     "created_at": {

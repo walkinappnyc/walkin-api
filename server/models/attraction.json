@@ -12,11 +12,8 @@
     },
     "body": {
       "type": "string",
-      "required": true
-    },
-    "image_id": {
-      "type": "number",
-      "required": true
+      "required": true,
+      "dataType": "text"
     },
     "created_at": {
       "type": "date"
@@ -26,7 +23,24 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "region": {
+      "type": "belongsTo",
+      "model": "Region",
+      "foreignkey": ""
+    },
+    "image": {
+      "type": "belongsTo",
+      "model": "Image",
+      "foreignkey": ""
+    },
+    "regions": {
+      "type": "hasMany",
+      "model": "Region",
+      "foreignKey": "",
+      "through": "AttractionRegion"
+    }
+  },
   "acls": [],
   "methods": {}
 }

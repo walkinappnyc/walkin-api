@@ -1,5 +1,5 @@
 {
-  "name": "PointsofInterest",
+  "name": "PointofInterest",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -10,11 +10,10 @@
       "type": "string",
       "required": true
     },
-    "point_of_interest_category_id": {
-      "type": "number",
-      "required": true
-    },
     "created_at": {
+      "type": "date"
+    },
+    "updated_at": {
       "type": "date"
     }
   },
@@ -24,6 +23,17 @@
       "type": "belongsTo",
       "model": "Neighborhood",
       "foreignKey": ""
+    },
+    "pointofinterestcategories": {
+      "type": "belongsTo",
+      "model": "PointofInterestCategories",
+      "foreignkey": ""
+    },
+    "neighborhoods": {
+      "type": "hasMany",
+      "model": "Neighborhood",
+      "foreignKey": "",
+      "through": "NeighborhoodPointOfInterest"
     }
   },
   "acls": [],

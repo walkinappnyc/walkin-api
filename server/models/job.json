@@ -8,29 +8,35 @@
   "properties": {
     "queue": {
       "type": "string",
-      "required": true
+      "required": true,
+      "index": true
     },
     "payload": {
-      "type": "any",
-      "required": true
+      "type": "string",
+      "required": true,
+      "dataType": "longtext"
     },
     "attempts": {
-      "type": "any",
-      "required": true
+      "type": "number",
+      "required": true,
+      "dataType": "tinyint"
     },
     "reserved": {
-      "type": "any",
-      "required": true
+      "type": "number",
+      "required": true,
+      "index": true,
+      "dataType": "tinyint"
     },
     "reservred_at": {
-      "type": "any"
+      "type": "number",
+      "index": true
     },
     "available_at": {
-      "type": "any",
+      "type": "number",
       "required": true
     },
     "created_at": {
-      "type": "date"
+      "type": "number"
     },
     "updated_at": {
       "type": "date"

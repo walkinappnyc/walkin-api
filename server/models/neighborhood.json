@@ -14,12 +14,9 @@
       "type": "string",
       "required": true
     },
-    "region_id": {
-      "type": "number",
-      "required": true
-    },
     "body": {
-      "type": "string"
+      "type": "string",
+      "dataType": "text"
     },
     "weight": {
       "type": "number",
@@ -40,6 +37,32 @@
       "model": "PointsofInterest",
       "foreignKey": "",
       "through": "NeighborhoodPointOfInterest"
+    },
+    "region": {
+      "type": "belongsTo",
+      "model": "Region",
+      "foreignkey": ""
+    },
+    "buildings": {
+      "type": "hasMany",
+      "model": "Building",
+      "foreignKey": ""
+    },
+    "pointofInterests": {
+      "type": "hasMany",
+      "model": "PointofInterest",
+      "foreignKey": "",
+      "through": "NeighborhoodPointOfInterest"
+    },
+    "metadatas": {
+      "type": "hasOne",
+      "model": "MetaData",
+      "polymorphic": "metadatable"
+    },
+    "addressables": {
+      "type": "hasOne",
+      "model": "Address",
+      "polymorphic": "addressable"
     }
   },
   "acls": [],

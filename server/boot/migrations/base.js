@@ -4,8 +4,8 @@ const path = require('path')
 const models = ['User', 'AccessToken', 'ACL', 'RoleMapping', 'Role']
 
 module.exports = function migrateBaseModels (app, next) {
-  const psql = app.dataSources.testwalk
-  psql.isActual(models, (err, actual) => {
+  const mysql = app.dataSources.mysql
+  mysql.isActual(models, (err, actual) => {
     if (err) {
       throw err
     }
@@ -17,7 +17,7 @@ module.exports = function migrateBaseModels (app, next) {
 
     console.log('Migrating Base Models...')
 
-    psql.autoupdate(models, (err, result) => {
+    mysql.autoupdate(models, (err, result) => {
       if (err) throw err
       console.log('Base models migration successful!')
       next()

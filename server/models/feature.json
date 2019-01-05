@@ -11,7 +11,7 @@
       "required": true
     },
     "feed_meta": {
-      "type": "any",
+      "type": "object",
       "required": true
     },
     "created_at": {
@@ -22,7 +22,19 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "building": {
+      "type": "belongsTo",
+      "model": "Building",
+      "foreignkey": ""
+    },
+    "units": {
+      "type": "hasMany",
+      "model": "Unit",
+      "foreignKey": "",
+      "through": "FeatureUnit"
+    }
+  },
   "acls": [],
   "methods": {}
 }

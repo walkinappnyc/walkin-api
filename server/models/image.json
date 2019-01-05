@@ -15,8 +15,7 @@
       "required": true
     },
     "group": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "tags": {
       "type": "string",
@@ -34,7 +33,43 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "buildings": {
+      "type": "hasMany",
+      "model": "Building",
+      "through": "Imageable",
+      "invert": true,
+      "polymorphic": true
+    },
+    "regions": {
+      "type": "hasMany",
+      "model": "Region",
+      "through": "Imageable",
+      "invert": true,
+      "polymorphic": true
+    },
+    "units": {
+      "type": "hasMany",
+      "model": "Unit",
+      "through": "Imageable",
+      "invert": true,
+      "polymorphic": true
+    },
+    "neighborhoods": {
+      "type": "hasMany",
+      "model": "Neighborhood",
+      "through": "Imageable",
+      "invert": true,
+      "polymorphic": true
+    },
+    "slideshows": {
+      "type": "hasMany",
+      "model": "Slideshow",
+      "through": "Imageable",
+      "invert": true,
+      "polymorphic": true
+    }
+  },
   "acls": [],
   "methods": {}
 }

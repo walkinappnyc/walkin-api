@@ -7,16 +7,19 @@
   },
   "properties": {
     "connection": {
-      "type": "any",
-      "required": true
+      "type": "string",
+      "required": true,
+      "dataType": "text"
     },
     "queue": {
-      "type": "any",
-      "required": true
+      "type": "string",
+      "required": true,
+      "dataType": "text"
     },
     "payload": {
-      "type": "any",
-      "required": true
+      "type": "string",
+      "required": true,
+      "dataType": "longtext"
     },
     "failed_at": {
       "type": "date",

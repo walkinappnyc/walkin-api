@@ -1,36 +1,31 @@
 {
-  "name": "Transportation",
+  "name": "Landlord",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "station_name": {
+    "xml_feed_url": {
       "type": "string",
       "required": true
     },
-    "station_service": {
+    "name": {
       "type": "string",
       "required": true
     },
-    "distance_to_station": {
+    "company": {
       "type": "string",
       "required": true
-    },
-    "created_at": {
-      "type": "date"
-    },
-    "updated_at": {
-      "type": "date"
     }
   },
   "validations": [],
   "relations": {
-    "building": {
-      "type": "belongsTo",
+    "buildings": {
+      "type": "hasMany",
       "model": "Building",
-      "foreignKey": ""
+      "foreignKey": "",
+      "through": "BuildingLandlord"
     }
   },
   "acls": [],

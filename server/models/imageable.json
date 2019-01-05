@@ -1,27 +1,31 @@
 {
-  "name": "RegionWaitunit",
+  "name": "Imageable",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "unit_size": {
+    "weight": {
       "type": "number",
-      "required": true
+      "required": true,
+      "default": 0
     }
   },
   "validations": [],
   "relations": {
-    "unit": {
+    "imageable": {
       "type": "belongsTo",
-      "model": "Unit",
-      "foreignKey": ""
+      "polymorphic": true
     },
-    "region": {
+    "image": {
       "type": "belongsTo",
-      "model": "Region",
-      "foreignKey": ""
+      "model": "Image",
+      "foreignKey": "",
+      "imageable": {
+        "type": "belongsTo",
+        "polymorphic": true
+      }
     }
   },
   "acls": [],
