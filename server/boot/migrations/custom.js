@@ -41,7 +41,8 @@ const models = [
   'Imageable',
   'Property',
   'BuildingLandlord',
-  'PropertyBuilding'
+  'PropertyBuilding',
+  'Landlord'
 ]
 
 module.exports = function migrateAccountModels (app, next) {

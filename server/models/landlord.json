@@ -10,13 +10,12 @@
       "type": "string",
       "required": true
     },
-    "name": {
-      "type": "string",
-      "required": true
-    },
     "company": {
       "type": "string",
       "required": true
+    },
+    "isActive": {
+      "type": "boolean"
     }
   },
   "validations": [],
