@@ -40,19 +40,28 @@
       ],
       "required": true
     },
-    "yardi_code": {
-      "type": "string"
-    },
     "xml_id": {
       "type": "string",
       "required": true,
       "index": {
         "unique": true
       }
+    }, 
+    "isActive": {
+      "type": "boolean"
+    },
+    "isFeatured": {
+      "type": "boolean"
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "landlord": {
+      "type": "belongsTo",
+      "model": "Landlord",
+      "foreignkey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
