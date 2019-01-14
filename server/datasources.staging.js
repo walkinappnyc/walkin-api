@@ -1,13 +1,13 @@
 'use strict'
 
 module.exports = {
-  "mysql": {
-    "host": "",
-    "port": 3306,
-    "url": process.env.JAWSDB_URL,
-    "password": "",
-    "name": "mysql",
-    "user": "",
-    "connector": "mysql"
-  }
+  'mysqlDb': {
+    'host': process.env.STAGING_RDS_HOST,
+    'port': 3306,
+    'database': process.env.STAGING_RDS_DB,
+    'user': process.env.STAGING_RDS_USER,
+    'password': process.env.STAGING_RDS_PWD,
+    'name': process.env.STAGING_RDS_DB,
+    'connector': 'mysql',
+  },
 }
