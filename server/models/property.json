@@ -47,6 +47,9 @@
         "unique": true
       }
     }, 
+    "apply_url": {
+      "type": "string"
+    }
     "isActive": {
       "type": "boolean"
     },
