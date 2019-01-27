@@ -43,6 +43,12 @@
       ],
       "required": false
     },
+    "incentives": {
+      "type": [
+        "object"
+      ],
+      "required": false
+    },
     "media": {
       "type": [
         "object"
