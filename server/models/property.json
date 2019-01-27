@@ -37,6 +37,12 @@
       ],
       "required": false
     },
+    "transportation": {
+      "type": [
+        "object"
+      ],
+      "required": false
+    },
     "media": {
       "type": [
         "object"
