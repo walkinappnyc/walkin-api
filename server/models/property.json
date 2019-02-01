@@ -61,9 +61,7 @@
     "xml_id": {
       "type": "string",
       "required": true,
-      "index": {
-        "unique": true
-      }
+      "id": true
     }, 
     "isActive": {
       "type": "boolean"
