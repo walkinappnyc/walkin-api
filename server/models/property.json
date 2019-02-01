@@ -17,6 +17,9 @@
       "type": "object",
       "required": true
     },
+    "neighborhood": {
+      "type": "string"
+    },
     "contact": {
       "type": "object",
       "required": false
