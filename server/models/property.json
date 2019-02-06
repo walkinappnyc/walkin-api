@@ -20,6 +20,12 @@
     "neighborhood": {
       "type": "string"
     },
+    "nav_city": {
+      "type": "string"
+    },
+    "nav_state": {
+      "type": "string"
+    },
     "contact": {
       "type": "object",
       "required": false
