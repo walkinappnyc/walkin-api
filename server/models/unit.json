@@ -165,6 +165,11 @@
       "polymorphic": "imageable"
     }
   },
-  "acls": [],
+  "acls": [{
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }],
   "methods": {}
 }
