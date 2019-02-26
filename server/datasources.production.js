@@ -2,12 +2,13 @@
 
 module.exports = {
   "mysql": {
-    "host": "",
+    "host": process.env.PRODUCTION_RDS_HOST,
     "port": 3306,
-    "url": process.env.JAWSDB_URL,
-    "password": "",
-    "name": "mysql",
-    "user": "",
+    "database": process.env.PRODUCTION_RDS_DB,
+    "url": "",
+    "password": process.env.PRODUCTION_RDS_PWD,
+    "name": process.env.PRODUCTION_RDS_DB,
+    "user": process.env.PRODUCTION_RDS_USER,
     "connector": "mysql"
-  }
+  },
 }

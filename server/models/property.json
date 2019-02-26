@@ -10,13 +10,25 @@
       "type": "object",
       "required": true
     },
+    "apply_url": {
+      "type": "string"
+    },
     "location": {
       "type": "object",
       "required": true
     },
+    "neighborhood": {
+      "type": "string"
+    },
+    "nav_city": {
+      "type": "string"
+    },
+    "nav_state": {
+      "type": "string"
+    },
     "contact": {
       "type": "object",
-      "required": true
+      "required": false
     },
     "agents": {
       "type": [
@@ -32,7 +44,19 @@
       "type": [
         "object"
       ],
-      "required": true
+      "required": false
+    },
+    "transportation": {
+      "type": [
+        "object"
+      ],
+      "required": false
+    },
+    "incentives": {
+      "type": [
+        "object"
+      ],
+      "required": false
     },
     "media": {
       "type": [
@@ -43,9 +67,7 @@
     "xml_id": {
       "type": "string",
       "required": true,
-      "index": {
-        "unique": true
-      }
+      "id": true
     }, 
     "isActive": {
       "type": "boolean"
