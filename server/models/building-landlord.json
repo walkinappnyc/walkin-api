@@ -8,9 +8,9 @@
   "properties": {},
   "validations": [],
   "relations": {
-    "building": {
+    "property": {
       "type": "belongsTo",
-      "model": "Building",
+      "model": "Property",
       "foreignKey": ""
     },
     "landlord": {
@@ -19,11 +19,6 @@
       "foreignKey": ""
     }
   },
-  "acls": [{
-      "accessType": "*",
-      "principalType": "ROLE",
-      "principalId": "$unauthenticated",
-      "permission": "DENY"
-    }],
+  "acls": [],
   "methods": {}
 }
