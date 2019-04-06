@@ -8,9 +8,9 @@
   "properties": {},
   "validations": [],
   "relations": {
-    "building": {
+    "property": {
       "type": "belongsTo",
-      "model": "Building",
+      "model": "Property",
       "foreignKey": ""
     },
     "landlord": {
