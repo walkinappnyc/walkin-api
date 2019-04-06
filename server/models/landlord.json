@@ -20,9 +20,9 @@
   },
   "validations": [],
   "relations": {
-    "buildings": {
+    "properties": {
       "type": "hasMany",
-      "model": "Building",
+      "model": "Property",
       "foreignKey": "",
       "through": "BuildingLandlord"
     }
