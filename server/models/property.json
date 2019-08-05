@@ -68,7 +68,11 @@
       "type": "string",
       "required": true,
       "id": true
-    }, 
+    },
+    "unit_id": {
+      "type": "string",
+      "required": true
+    },
     "isActive": {
       "type": "boolean"
     },
