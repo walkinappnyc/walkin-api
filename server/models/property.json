@@ -73,6 +73,10 @@
       "type": "string",
       "required": true
     },
+    "branchio_link": {
+      "type": "string",
+      "required": false
+    },
     "isActive": {
       "type": "boolean"
     },
