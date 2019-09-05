@@ -62,6 +62,34 @@ module.exports = function(Property) {
     })
   }
 
+  Property.setBranchioLink = function(data = {}, cb) {
+    const {unitId, branchioLink = null} = data;
+
+    if (unitId == null) {
+      return cb(new Error('unit_id required'));
+    }
+
+    Property.find({where: {unit_id: unitId}}, (err, properties) => {
+      if (err) {
+        return cb(err);
+      }
+      const prop = properties[0];
+
+      if (prop == null) {
+        return cb();
+      }
+
+      prop.updateAttributes({branchio_link: branchioLink}, (err, property) => {
+        if (err) {
+          return cb(err);
+        } else {
+          return cb(null, property);
+        }
+      });
+    });
+  }
+
+
   Property.remoteMethod(
     'isActive',
     {
@@ -106,4 +134,11 @@ module.exports = function(Property) {
       returns: { arg: 'data', type: 'object' }
     }
   )
+
+  Property.remoteMethod(
+    'setBranchioLink', {
+    http: { path: '/branchio', verb: 'patch' },
+    accepts: { arg: 'data', type: 'object', http: { source: 'body' } },
+    returns: { arg: 'data', type: 'object' }
+  });
 };
