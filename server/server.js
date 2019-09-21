@@ -28,6 +28,8 @@ const bootOptions = {
 boot(app, bootOptions, function(err) {
   if (err) throw err;
 
+  require('./boot/routes')(app);
+
   // start the server if `$ node server.js`
   if (require.main === module)
     app.start();
