@@ -1,30 +1,30 @@
-'use strcit';
-
-const util = require('util');
-const nodemailer = require('nodemailer');
+'use strict';
+/**
+ * https://docs.aws.amazon.com/en_us/sdk-for-javascript/v2/developer-guide/ses-examples-sending-email.html
+ * */
 
 const {
-  NODEMAILER_USER,
-  NODEMAILER_PASS,
-  NODEMAILER_RECEIVER,
+  AWSSESKEYID,
+  AWSSESKEYSECRET,
+  AWSSESREGION,
 } = process.env;
 
-const transporter = nodemailer.createTransport({
-  host: 'smtp.gmail.com',
-  port: 587,
-  secure: false,
-  requireTLS: true,
-  auth: {
-    user: NODEMAILER_USER,
-    pass: NODEMAILER_PASS,
+const aws = require('aws-sdk');
+
+const ses = new aws.SES({
+  credentials: {
+    accessKeyId: AWSSESKEYID,
+    secretAccessKey: AWSSESKEYSECRET,
   },
+  region: AWSSESREGION,
 });
 
-const sendMail = util.promisify(transporter.sendMail).bind(transporter);
+const TO_ADDRESS = 'support@walk.in';
+const bodyDefaults = { Charset: 'UTF-8' };
 
 module.exports = function bootRoutes(app) {
   app.post('/api/support',  function supportHandler(req, res) {
-    if (!NODEMAILER_PASS || !NODEMAILER_USER) {
+    if (!AWSSESKEYID || !AWSSESKEYSECRET || !AWSSESREGION) {
       return res.status(500).send('Sending emails not activated');
     }
 
@@ -44,16 +44,26 @@ module.exports = function bootRoutes(app) {
       return res.status(400).send('Text required');
     }
 
-    console.log('CREDS:',
-      NODEMAILER_USER, NODEMAILER_RECEIVER, NODEMAILER_PASS);
+    const params = {
+      Source: TO_ADDRESS,
+      Destination: {
+        ToAddresses: [
+          TO_ADDRESS,
+        ],
+      },
+      Message: {
+        Body: {
+          Html: { Data: text, ...bodyDefaults },
+          Text: { Data: text, ...bodyDefaults },
+        },
+        Subject: { Data: `Support: ${subject}`, ...bodyDefaults },
+      },
+      ReplyToAddresses: [
+        email,
+      ],
+    };
 
-    sendMail({
-      from: NODEMAILER_USER,
-      to: (NODEMAILER_RECEIVER || NODEMAILER_USER),
-      replyTo: email,
-      subject,
-      text,
-    }).then(() => {
+    ses.sendEmail(params).promise().then(() => {
       res.send('sent');
     })
       .catch(err => {
